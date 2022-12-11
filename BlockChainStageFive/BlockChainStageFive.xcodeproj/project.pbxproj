@@ -13,6 +13,14 @@
 		B614976E2945C27A007DEE19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B614976C2945C27A007DEE19 /* Main.storyboard */; };
 		B61497702945C27D007DEE19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B614976F2945C27D007DEE19 /* Assets.xcassets */; };
 		B61497732945C27D007DEE19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B61497712945C27D007DEE19 /* LaunchScreen.storyboard */; };
+		B61497832945C2E1007DEE19 /* KeyPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = B614977B2945C2E1007DEE19 /* KeyPair.swift */; };
+		B61497842945C2E1007DEE19 /* Hash.swift in Sources */ = {isa = PBXBuildFile; fileRef = B614977C2945C2E1007DEE19 /* Hash.swift */; };
+		B61497852945C2E1007DEE19 /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = B614977D2945C2E1007DEE19 /* Block.swift */; };
+		B61497862945C2E1007DEE19 /* Signature.swift in Sources */ = {isa = PBXBuildFile; fileRef = B614977E2945C2E1007DEE19 /* Signature.swift */; };
+		B61497872945C2E1007DEE19 /* Blockchain.swift in Sources */ = {isa = PBXBuildFile; fileRef = B614977F2945C2E1007DEE19 /* Blockchain.swift */; };
+		B61497882945C2E1007DEE19 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61497802945C2E1007DEE19 /* Transaction.swift */; };
+		B61497892945C2E1007DEE19 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61497812945C2E1007DEE19 /* Account.swift */; };
+		B614978A2945C2E1007DEE19 /* Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61497822945C2E1007DEE19 /* Operation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		B614976F2945C27D007DEE19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B61497722945C27D007DEE19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B61497742945C27D007DEE19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B614977B2945C2E1007DEE19 /* KeyPair.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyPair.swift; sourceTree = "<group>"; };
+		B614977C2945C2E1007DEE19 /* Hash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hash.swift; sourceTree = "<group>"; };
+		B614977D2945C2E1007DEE19 /* Block.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
+		B614977E2945C2E1007DEE19 /* Signature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Signature.swift; sourceTree = "<group>"; };
+		B614977F2945C2E1007DEE19 /* Blockchain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Blockchain.swift; sourceTree = "<group>"; };
+		B61497802945C2E1007DEE19 /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		B61497812945C2E1007DEE19 /* Account.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		B61497822945C2E1007DEE19 /* Operation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,7 @@
 		B61497652945C27A007DEE19 /* BlockChainStageFive */ = {
 			isa = PBXGroup;
 			children = (
+				B614977A2945C2E1007DEE19 /* Core */,
 				B61497662945C27A007DEE19 /* AppDelegate.swift */,
 				B61497682945C27A007DEE19 /* SceneDelegate.swift */,
 				B614976A2945C27A007DEE19 /* ViewController.swift */,
@@ -65,6 +82,21 @@
 				B61497742945C27D007DEE19 /* Info.plist */,
 			);
 			path = BlockChainStageFive;
+			sourceTree = "<group>";
+		};
+		B614977A2945C2E1007DEE19 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B614977B2945C2E1007DEE19 /* KeyPair.swift */,
+				B614977C2945C2E1007DEE19 /* Hash.swift */,
+				B614977D2945C2E1007DEE19 /* Block.swift */,
+				B614977E2945C2E1007DEE19 /* Signature.swift */,
+				B614977F2945C2E1007DEE19 /* Blockchain.swift */,
+				B61497802945C2E1007DEE19 /* Transaction.swift */,
+				B61497812945C2E1007DEE19 /* Account.swift */,
+				B61497822945C2E1007DEE19 /* Operation.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +170,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B614978A2945C2E1007DEE19 /* Operation.swift in Sources */,
+				B61497842945C2E1007DEE19 /* Hash.swift in Sources */,
+				B61497872945C2E1007DEE19 /* Blockchain.swift in Sources */,
 				B614976B2945C27A007DEE19 /* ViewController.swift in Sources */,
+				B61497862945C2E1007DEE19 /* Signature.swift in Sources */,
+				B61497832945C2E1007DEE19 /* KeyPair.swift in Sources */,
+				B61497892945C2E1007DEE19 /* Account.swift in Sources */,
+				B61497852945C2E1007DEE19 /* Block.swift in Sources */,
 				B61497672945C27A007DEE19 /* AppDelegate.swift in Sources */,
 				B61497692945C27A007DEE19 /* SceneDelegate.swift in Sources */,
+				B61497882945C2E1007DEE19 /* Transaction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
